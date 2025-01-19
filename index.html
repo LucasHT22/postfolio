@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas :D</title>
+</head>
+<body>
+    <style>
+        html, body, select, option, input {
+            background-color: #212121;
+        }
+        h1, h3 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 10%;
+        }
+        .request0 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        select {
+            color: white;
+        }
+        input {
+            width: 70%;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+        }
+        button {
+            background-color: #6BDD9A;
+            color: white;
+        }
+    </style>
+    <h1>Send an API request</h1>
+    <div class="request0">
+        <select name="request">
+            <option value="v1" id="v1">GET</option>
+            <option value="v2" id="v2">POST</option>
+            <option value="v3" id="v3">DELETE</option>
+        </select>
+        <input type="text" value="https://postfolio.devlucas.page/api/">
+        <button id="send0" onclick="">Send</button>
+    </div>
+    <div class="response">
+        <h3>Response</h3>
+        <code id="response0">
+    </div>
+</body>
+</html>
