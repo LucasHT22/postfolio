@@ -1,0 +1,44 @@
+html, body, select, option, input {
+    background-color: #212121;
+}
+h1, h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+}
+.request0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+select {
+    color: white;
+    border: solid white;
+}
+input {
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    border: solid white;
+}
+button {
+    background-color: #6BDD9A;
+    color: white;
+    border: solid white;
+}
+code {
+    color: white;
+    font-family: monospace;
+    margin-left: 10%;
+}
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #6BDD9A;
+    color: white;
+    border: solid white;
+    margin-left: 10%;
+    text-decoration: none;
+}

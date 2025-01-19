@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas :D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function re() {
+            const req0 = document.getElementById('send0').value.toLowerCase();
+            switch (true) {
+                case req0 == "https://postfolio.devlucas.page/api/":
+                    document.getElementById('response0').innerHTML = "LADIES AND GENTLEMAN IT WORKS";
+                    break;
+                case req0 == "https://postfolio.devlucas.page/api/lie":
+                    document.getElementById('response0').innerHTML = "This website is a lie!1!!1 It's purely a switch case";
+                    break;
+                case req0 == "https://postfolio.devlucas.page/api/time":
+                    // integrate cs50 time 
+                    break;
+                case req0 == "https://postfolio.devlucas.page/api/sp":
+                    window.location.href = "https://youtu.be/vuLtlzMMW6o"
+                    break;
+            }
+        }
+    </script>
+    <h1>Send an API request</h1>
+    <div class="request0">
+        <select name="request">
+            <option value="v1" id="v1">GET</option>
+            <option value="v2" id="v2">POST</option>
+            <option value="v3" id="v3">DELETE</option>
+        </select>
+        <input type="text" id="send0" value="https://postfolio.devlucas.page/api/">
+        <button onclick="re()">Send</button>
+    </div>
+    <br />
+    <div class="response">
+        <h2>Response</h2>
+        <code id="response0" />
+    </div>
+</body>
+</html>
