@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Request - Lucas Worksplace</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.svg">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/scripts.js"></script>
+    <div id="menu">
+        <a id="ma" href="/index.html">Home</a>
+        <a id="ma" href="/pages/req.html">Workspace</a>
+        <a id="ma" href="/pages/docs.html">Documentation</a>
+        <a id="ma" href="https://github.com/LucasHT22">LUCAS HONDA.</a>
+    </div>
+    <br />
+    <h1>Send an API request</h1>
+    <div class="request0">
+        <select name="request" id="sel">
+            <option value="v1" id="v1">GET</option>
+            <option value="v2" id="v2">POST</option>
+            <option value="v3" id="v3">DELETE</option>
+        </select>
+        <input type="text" id="send0" value="https://postfolio.devlucas.page/api/">
+        <button onclick="re()">Send</button>
+    </div>
+    <br />
+    <a onclick="hp()" id="hp">Help</a>
+    <br />
+    <div class="response">
+        <h2>Response</h2>
+        <div id="response0">
+            Enter the URL and click Send to get a response
+        </div>
+    </div>
+</body>
+</html>
