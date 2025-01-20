@@ -1,2 +1,12 @@
+<div align="center">
+    <br />
+    <img src="/favicon.svg" width="300">
+    <br />
+    <h1>POSTfolio</h1>
+</div>
+
 # postfolio
-my portifolio styled like api requests
+My personal api requests-style website
+
+### Why?
+

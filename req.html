@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas :D</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script>
+        function ver(tgt) {
+            const sel = document.getElementById('sel');
+            const cte = sel.options[sel.selectedIndex].text;
+
+            if (cte == tgt) {
+                return true;
+            }
+            return false;
+        }
         function re() {
             const req0 = document.getElementById('send0').value.toLowerCase();
-            switch (true) {
-                case req0 == "https://postfolio.devlucas.page/api/":
-                    document.getElementById('response0').innerHTML = "LADIES AND GENTLEMAN IT WORKS";
-                    break;
-                case req0 == "https://postfolio.devlucas.page/api/lie":
-                    document.getElementById('response0').innerHTML = "This website is a lie!1!!1 It's purely a switch case";
-                    break;
-                case req0 == "https://postfolio.devlucas.page/api/time":
-                    // integrate cs50 time 
-                    break;
-                case req0 == "https://postfolio.devlucas.page/api/sp":
-                    window.location.href = "https://youtu.be/vuLtlzMMW6o"
-                    break;
+            if (ver('GET')) {
+                console.log("hey|!!");
+                switch (true) {
+                    case req0 == "https://postfolio.devlucas.page/api/":
+                        document.getElementById('response0').innerHTML = "LADIES AND GENTLEMAN IT WORKS";
+                        break;
+                    case req0 == "https://postfolio.devlucas.page/api/lie":
+                        document.getElementById('response0').innerHTML = "This website is a lie!1!!1 It's purely a switch case";
+                        break;
+                    case req0 == "https://postfolio.devlucas.page/api/about":
+                        document.getElementById('response0').innerHTML = "Hey, I'm Lucas! <br /> I'm high school student maker from São Paulo, Brazil! <br /> Here some things I like: < br /> <ul> <li> Aviation - Studying to be a private pilot :) </li> <li> 3d printers - Ender 3 Pro and Bambu Lab A1 mini owner! I provide maintenance and support </li> <li>CAD - Autodesk Fusion 360 and Onshape user, on-demand part modeling</li> </ul>";
+                        break;
+                    case req0 == "https://postfolio.devlucas.page/api/sp":
+                        window.location.href = "https://youtu.be/vuLtlzMMW6o"
+                        break;
+                }
             }
         }
     </script>
     <h1>Send an API request</h1>
     <div class="request0">
-        <select name="request">
+        <select name="request" id="sel">
             <option value="v1" id="v1">GET</option>
             <option value="v2" id="v2">POST</option>
             <option value="v3" id="v3">DELETE</option>
@@ -40,7 +53,9 @@
     <br />
     <div class="response">
         <h2>Response</h2>
-        <code id="response0" />
+        <div id="response0">
+            Enter the URL and click Send to get a response
+        </div>
     </div>
 </body>
 </html>
