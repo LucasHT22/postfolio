@@ -10,3 +10,6 @@ My personal api requests-style website
 
 ### Why?
 
+### Why no framework?
+
+People uses frameworks too much these days let's keep simple :)
