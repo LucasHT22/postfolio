@@ -27,6 +27,7 @@ function re() {
                 break;
             case req0 == "https://postfolio.devlucas.page/api/sp/":
                 window.location.href = "https://youtu.be/vuLtlzMMW6o"
+                document.getElementById('response0').innerHTML = "Enter the URL and click Send to get a response";
                 break;
         }
     }
@@ -35,6 +36,7 @@ function re() {
     }
     if (ver('DELETE')) {
         window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+        document.getElementById('response0').innerHTML = "Enter the URL and click Send to get a response";
     }
 }
 function hp() {
